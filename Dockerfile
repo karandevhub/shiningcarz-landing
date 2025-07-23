@@ -40,5 +40,5 @@ USER appuser
 ENV PORT=8080
 EXPOSE 8080
 # Start the app
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "8080"]
 
