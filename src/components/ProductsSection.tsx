@@ -25,7 +25,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A handheld steam gun used for precise and effective cleaning with high-pressure steam.",
         price: "Rs. 5,500",
         
-        image: "src/assets/pistolet-parowy-250x250.webp",
+        image: "/assets/pistolet-parowy-250x250.webp",
         link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=pistolet"
       },
       {
@@ -34,7 +34,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "An enclosed booth designed for safe and controlled automotive painting applications.",
         price: "Rs. 5,00,000",
         
-        image: "src/assets/paint-spray-booth-250x250.webp",
+        image: "/assets/paint-spray-booth-250x250.webp",
         link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=Paint+Spray+Booth"
       },
       {
@@ -43,7 +43,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A liquid polish used to shine and protect the surfaces of cars and bikes.",
         price: "Rs. 5000",
        
-        image: "src/assets/meguiars-speed-glaze-250x250.webp",
+        image: "/assets/meguiars-speed-glaze-250x250.webp",
          link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=Meguiars+Speed+Glaze"
       },
       {
@@ -52,16 +52,16 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A powerful hydraulic lift for raising vehicles during servicing or repairs.",
         price: "Rs. 99,999",
         
-        image: "src/assets/scz-1-250x250.webp",
+        image: "/assets/scz-1-250x250.webp",
          link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=scz"
       },
       {
         id: 5,
-        name: "Eco Steam Washer",
+        name: "/assets/Eco Steam Washer",
         description: "A compact, top-loading steam washer used for eco-friendly vehicle cleaning.",
         price: "Rs. 2,40,000",
         
-        image: "src/assets/ecosteam-steam-washer-250x250.webp",
+        image: "/assets/ecosteam-steam-washer-250x250.webp",
         link:"https://www.indiamart.com/shiningcarzprivatelimited/car-washer.html"
       },
       {
@@ -70,7 +70,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A low-profile hydraulic lift for quickly raising vehicles in limited space.",
         price: "Rs. 1,60,000",
         
-        image: "src/assets/lift13--250x250 (1).webp",
+        image: "/assets/lift13--250x250 (1).webp",
          link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=lift"
       },
       {
@@ -79,7 +79,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A mobile steam car washer ideal for deep cleaning using minimal water.",
         price: "Rs. 1,80,000",
         
-        image: "src/assets/ecosteam-steam-car-washer-250x250.webp",
+        image: "/assets/ecosteam-steam-car-washer-250x250.webp",
          link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=steam+washer"
       },
       {
@@ -88,7 +88,7 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         description: "A fully automated car wash system delivering high-pressure water jets for thorough cleaning.",
         price: "Rs. 5,999",
         
-        image: "src/assets/automatic-car-washing-machine-250x250.webp",
+        image: "/assets/automatic-car-washing-machine-250x250.webp",
          link:"https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=car+washing"
       }
     ],
@@ -97,36 +97,36 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         id: 9,
         name: "Blogs Cleaning",
         description: "A specialist sprays disinfectant on a car seat for deep interior cleaning and sanitization.",
-        price: "Rs. 79.99",
+        price: "Rs. 899",
         rating: 4.9,
-        image: "src/assets/Blogs Cleaning.webp",
+        image: "/assets/Blogs Cleaning.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 10,
         name: "Upholstery Cleaner ",
         description: "Leather car seats being polished and conditioned with care using detailing tools.",
-        price: "Rs. 54.99",
+        price: "Rs. 2000",
         rating: 4.7,
-        image: "src/assets/Car_Cleaning_with_Upholstery_Cleaner.webp",
+        image: "/assets/Car_Cleaning_with_Upholstery_Cleaner.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 11,
         name: "Micro Fiber Cloth",
         description: "Dusting and wiping the dashboard to restore a clean, glossy interior finish.",
-        price: "Rs. 34.99",
+        price: "Rs. 1499",
         rating: 4.8,
-        image: "src/assets/wb 1.webp",
+        image: "/assets/wb 1.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 12,
         name: "Deep Interior Cleaning",
         description: "Thorough cleaning of the gear console using a spray and microfiber cloth.",
-        price: "Rs. 44.99",
+        price: "Rs.2499",
         rating: 4.9,
-        image: "src/assets/wb 2.webp",
+        image: "/assets/wb 2.webp",
         link: "https://app.shiningcarz.in/"
       },
     ],
@@ -135,36 +135,36 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
         id: 13,
         name: "Tire Pressure Wash",
         description: "Powerful pressure wash targeting the wheels and lower body for deep cleaning.",
-        price: "Rs. 249.99",
+        price: "Rs. 1099",
         rating: 4.9,
-        image: "src/assets/exterior 1.webp",
+        image: "/assets/exterior 1.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 14,
         name: "Car Polishing",
         description: "A professional polishes the car’s surface to restore its glossy shine.",
-        price: "Rs. 89.99",
+        price: "Rs. 2999",
         rating: 4.8,
-        image: "src/assets/exterior 2.webp",
+        image: "/assets/exterior 2.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 15,
         name: "Hand Washing Car",
         description: "Detailed hand wash with foam for a spotless and shiny car exterior.",
-        price: "Rs. 129.99",
+        price: "Rs. 1599",
         rating: 4.7,
-        image: "src/assets/exterior 3.webp",
+        image: "/assets/exterior 3.webp",
         link: "https://app.shiningcarz.in/"
       },
       {
         id: 16,
         name: "Car Foam Wash",
         description: "A luxury car undergoing a high-foam exterior wash.",
-        price: "Rs. 79.99",
+        price: "Rs. 1799",
         rating: 4.9,
-        image: "src/assets/exterior 4.webp",
+        image: "/assets/exterior 4.jpg",
         link: "https://app.shiningcarz.in/"
       },
     ]
@@ -239,7 +239,16 @@ const ProductsSection = ({ initialCategory = 'exterior' }: ProductsSectionProps)
                       <p className="text-foreground/80">{product.description}</p>
                       
                       <div className="flex items-center justify-between">
-                        <span className="text-3xl font-bold text-primary">{product.price}</span>
+                        <div className="flex flex-col">
+                          {activeCategory === 'exterior' || activeCategory === 'interior' ? (
+                            <>
+                              <span className="text-sm text-red-600 mb-1">starting from</span>
+                              <span className="text-3xl font-bold text-primary">{product.price}</span>
+                            </>
+                          ) : (
+                            <span className="text-3xl font-bold text-primary">{product.price}</span>
+                          )}
+                        </div>
                         {product.link ? (
                           <a
                             href={product.link}

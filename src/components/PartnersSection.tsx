@@ -2,14 +2,14 @@ import { Sparkles } from 'lucide-react';
 
 const PartnersSection = () => {
   const partners = [
-    { name: 'Kuber', logo: 'src/assets/KBF.png' },
-    { name: 'DC Studio', logo: 'src/assets/DC F.png' },
-    { name: 'MN Cars', logo: 'src/assets/MN F.png' },
-    { name: 'Bright Car Wash', logo: 'src/assets/BCW F.png' },
-    { name: 'RS Detailing', logo: 'src/assets/RS F.png' },
-    { name: 'Volvo', logo: 'src/assets/volvo-removebg-preview (1).avif' },
-    { name: 'Detailing Devils', logo: 'src/assets/DD F.png' },
-    { name: 'Classique', logo: 'src/assets/classic.avif' },
+    { name: 'Kuber', logo: '/assets/KBF.png' },
+    { name: 'DC Studio', logo: '/assets/DC F.png' },
+    { name: 'MN Cars', logo: '/assets/MN F.png' },
+    { name: 'Bright Car Wash', logo: '/assets/BCW F.png' },
+    { name: 'RS Detailing', logo: '/assets/RS F.png' },
+    { name: 'Volvo', logo: '/assets/volvo-removebg-preview (1).avif' },
+    { name: 'Detailing Devils', logo: '/assets/DD F.png' },
+    { name: 'Classique', logo: '/assets/classic.avif' },
   ];
 
   return (

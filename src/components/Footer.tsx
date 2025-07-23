@@ -13,8 +13,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/shiningcarz', name: 'Facebook' },
-    { icon: Twitter, href: 'https://twitter.com/shiningcarz', name: 'Twitter' },
-    { icon: Instagram, href: 'https://www.instagram.com/shiningcarz', name: 'Instagram' },
+    { icon: Twitter, href: 'https://x.com/shining_carz?t=ghKpSJF7ewszZ-YL5YzDaQ&s=09', name: 'Twitter' },
+    { icon: Instagram, href: 'https://www.instagram.com/shiningcarzofficial?igsh=MWZkcDZtcXBobDZxag==', name: 'Instagram' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/shining-carz/', name: 'LinkedIn' }
   ];
 

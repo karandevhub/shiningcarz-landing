@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Sparkles, Car, Shield } from 'lucide-react';
-import heroImage from '@/assets/hero-car-wash.jpg';
+
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+          src='/assets/hero-car-wash.jpg'
           alt="Premium car washing service" 
           className="w-full h-full object-cover"
         />

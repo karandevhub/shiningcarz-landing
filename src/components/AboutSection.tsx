@@ -1,6 +1,6 @@
 import { Car, Wrench, Heart, Leaf } from 'lucide-react';
 // Using placeholder image since generation failed
-const aboutImage = 'src/assets/tjsexr0betyk3ttnlife.webp';
+const aboutImage = '/assets/tjsexr0betyk3ttnlife.webp';
 
 const AboutSection = () => {
   const achievements = [
