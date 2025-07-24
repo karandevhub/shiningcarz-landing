@@ -19,7 +19,7 @@ const AboutSection = () => {
     {
       icon: Heart,
       title: 'Happy Customers',
-      value: '500+',
+      value: '12K+',
       description: 'Satisfied customers who trust our premium services'
     },
     {

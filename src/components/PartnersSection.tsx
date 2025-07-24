@@ -25,7 +25,7 @@ const PartnersSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold font-playfair mb-6">
             Our Trusted
             <span className="block gold-gradient bg-clip-text text-transparent">
-              Customers
+              Clients
             </span>
           </h2>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
@@ -58,11 +58,11 @@ const PartnersSection = () => {
         {/* Trust Indicators */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="luxury-card p-6">
-            <div className="text-3xl font-bold text-primary mb-2">10</div>
-            <div className="text-foreground/70">Years of Customers</div>
+            <div className="text-3xl font-bold text-primary mb-2">13</div>
+            <div className="text-foreground/70">Years of Clients</div>
           </div>
           <div className="luxury-card p-6">
-            <div className="text-3xl font-bold text-primary mb-2">50K+</div>
+            <div className="text-3xl font-bold text-primary mb-2">15K+</div>
             <div className="text-foreground/70">Vehicles Serviced</div>
           </div>
           <div className="luxury-card p-6">

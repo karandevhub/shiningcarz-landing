@@ -80,11 +80,11 @@ const HeroSection = () => {
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="luxury-card p-6 shine-effect">
-              <div className="text-primary text-2xl font-bold mb-2">500+</div>
-              <div className="text-foreground/80">Happy Clients</div>
+              <div className="text-primary text-2xl font-bold mb-2">12K+</div>
+              <div className="text-foreground/80">Happy Customers</div>
             </div>
             <div className="luxury-card p-6 shine-effect">
-              <div className="text-primary text-2xl font-bold mb-2">12</div>
+              <div className="text-primary text-2xl font-bold mb-2">13</div>
               <div className="text-foreground/80">Years Experience</div>
             </div>
             <div className="luxury-card p-6 shine-effect">
