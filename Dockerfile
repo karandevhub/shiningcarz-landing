@@ -1,23 +1,19 @@
 # Base image
 FROM node:18-alpine AS base
 
-# Dependencies layer
+# Dependencies
 FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm install --frozen-lockfile
 
-# Install serve globally for production static file serving
-RUN npm install --global serve
-
+# Build
 FROM base AS builder
 WORKDIR /app
-
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-
 ENV NODE_ENV=production
 RUN npm run build
 
@@ -25,20 +21,17 @@ RUN npm run build
 FROM base AS runner
 WORKDIR /app
 
-# Install the 'serve' package globally
-RUN npm install -g serve
-
-# Copy only what's needed for production
-COPY --from=builder /app/dist ./dist
+ENV NODE_ENV=production
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
 
 # Use a non-root user
 RUN addgroup --system --gid 1001 appgroup && \
     adduser --system --uid 1001 appuser
 USER appuser
 
-# Cloud Run expects your app to listen on $PORT
 ENV PORT=8080
 EXPOSE 8080
-# Start the app
-CMD ["serve", "-s", "dist", "-l", "8080"]
-
+CMD ["npm", "start"]
