@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         className={cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-dark"
+          "font-mr luxury-gradient no-scrollbar"
         )}
       >
         <Header />

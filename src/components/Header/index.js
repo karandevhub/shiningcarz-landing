@@ -10,93 +10,131 @@ import {
 } from "react-icons/fa6";    
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
-
   const [click, setClick] = useState(false);
+  const pathname = usePathname();
 
-const toggle = () =>{
-  setClick(!click)
-}
+  const toggle = () => {
+    setClick(!click)
+  }
+
+  const isActive = (path) => {
+    return pathname === path || 
+           (path === "/blogs" && pathname.startsWith("/blogs"));
+  }
+
   return (
-    <header className="w-full py-2 px-5 sm:px-10 flex items-center justify-between bg-dark">
-        <Logo />
+    <header className={`w-full lg:py-2 px-5 sm:px-10 flex items-center justify-between ${click?'py-5':'py-2'}`}>
+      <Logo />
 
-        <button className="inline-block sm:hidden z-50" onClick={toggle} aria-label="Hamburger Menu">
-          <div className="w-6 cursor-pointer transition-all ease duration-300">
-            <div className="relative">
+      <button className="inline-block sm:hidden z-50" onClick={toggle} aria-label="Hamburger Menu">
+        <div className="w-6 cursor-pointer transition-all ease duration-300">
+          <div className="relative">
             <span className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200" 
-            style={{
-             transform: click ? "rotate(-45deg) translateY(0)" : "rotate(0deg) translateY(6px)"
-            }}
-            
+              style={{
+                transform: click ? "rotate(-45deg) translateY(0)" : "rotate(0deg) translateY(6px)"
+              }}
             >&nbsp;</span>
             <span className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
-            style={{
-              opacity: click ? 0 : 1
-             }}
+              style={{
+                opacity: click ? 0 : 1
+              }}
             >&nbsp;</span>
             <span className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200"
-            style={{
-              transform: click ? "rotate(45deg) translateY(0)" : "rotate(0deg) translateY(-6px)"
-             }}
+              style={{
+                transform: click ? "rotate(45deg) translateY(0)" : "rotate(0deg) translateY(-6px)"
+              }}
             >&nbsp;</span>
-            </div>
-
           </div>
-        </button>
+        </div>
+      </button>
 
-        <nav className="w-max py-3 text-black px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
+      {/* Mobile Navigation */}
+      <nav className="w-max py-3 text-black px-4 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize items-center flex sm:hidden
         fixed top-4 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300"
         style={{
           top: click ? "1rem" : "-5rem"
-         }}
+        }}
+      >
+        <Link 
+          href="/" 
+          className={`mr-1 px-3 py-1 rounded-full ${isActive("/") ? "gold-gradient" : ""}`}
         >
-            <Link href="/" className="mr-2">Home</Link>
-            <Link href="/blogs" className="mx-2">Blogs</Link>
-            <Link href="https://app.shiningcarz.com/" className="mx-2">Book Now</Link>
-        </nav>
+          Home
+        </Link>
+        <Link 
+          href="/blogs" 
+          className={`mx-1 px-3 py-1 rounded-full ${isActive("/blogs") ? "gold-gradient" : ""}`}
+        >
+          Blogs
+        </Link>
+        <Link 
+          href="https://app.shiningcarz.com/" 
+          className="mx-1 px-3 py-1 rounded-full"
+        >
+          Book Now
+        </Link>
+      </nav>
 
-
-        <nav className="text-black w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
+      {/* Desktop Navigation */}
+      <nav className="text-black w-max py-2 px-5 border border-solid border-dark rounded-full font-medium capitalize items-center hidden sm:flex
         fixed top-4 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
-            <Link href="/" className="mr-2">Home</Link>
-            <Link href="/blogs" className="mx-2">Blogs</Link>
-            <Link href="https://app.shiningcarz.com/" className="mx-2">Book Now</Link>
-        </nav>
-        <div className=" hidden sm:flex items-center gap-2">
-            <Link
-                href={siteMetadata.facebook}
-                className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <FaFacebookF className="w-4 h-4" />
-              </Link>
-              <Link
-                href={siteMetadata.instagram}
-                className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <FaInstagram className="w-4 h-4" />
-              </Link>
-              <Link
-                href={siteMetadata.youtube}
-                className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <FaYoutube className="w-4 h-4" />
-              </Link>
-              <Link
-                href={siteMetadata.linkedin}
-                className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <FaLinkedinIn className="w-4 h-4" />
-              </Link>
-              <Link
-                href={siteMetadata.twitter}
-                className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <FaXTwitter className="w-4 h-4" />
-              </Link>
-        </div>
+        <Link 
+          href="/" 
+          className={`mr-2 px-3 py-1 rounded-full ${isActive("/") ? "gold-gradient" : ""}`}
+        >
+          Home
+        </Link>
+        <Link 
+          href="/blogs" 
+          className={`mx-2 px-3 py-1 rounded-full ${isActive("/blogs") ? "gold-gradient" : ""}`}
+        >
+          Blogs
+        </Link>
+        <Link 
+          href="https://app.shiningcarz.com/" 
+          className="mx-2 px-3 py-1 rounded-full"
+        >
+          Book Now
+        </Link>
+      </nav>
+
+      <div className="hidden sm:flex items-center gap-2">
+        {/* Social icons remain unchanged */}
+        <Link
+          href={siteMetadata.facebook}
+          className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
+        >
+          <FaFacebookF className="w-4 h-4" />
+        </Link>
+        <Link
+          href={siteMetadata.instagram}
+          className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
+        >
+          <FaInstagram className="w-4 h-4" />
+        </Link>
+        <Link
+          href={siteMetadata.youtube}
+          className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
+        >
+          <FaYoutube className="w-4 h-4" />
+        </Link>
+        <Link
+          href={siteMetadata.linkedin}
+          className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
+        >
+          <FaLinkedinIn className="w-4 h-4" />
+        </Link>
+        <Link
+          href={siteMetadata.twitter}
+          className="bg-white/10 p-2 rounded-full hover:bg-[#a81313] hover:text-white transition-all duration-300 hover:scale-110"
+        >
+          <FaXTwitter className="w-4 h-4" />
+        </Link>
+      </div>
     </header>
   )
 }

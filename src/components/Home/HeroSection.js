@@ -1,6 +1,7 @@
 'use client'
 import { Button } from '@/components/ui/button';
 import { Sparkles, Car, Shield } from 'lucide-react';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -38,24 +39,13 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button 
-              className="luxury-button text-lg px-8 py-4"
-              onClick={() => {
-                // First scroll to products section
-                document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
-                // Set active category to 'exterior'
-                const productsSection = document.getElementById('products');
-                if (productsSection) {
-                  const exteriorButton = productsSection.querySelector('[data-category="exterior"]');
-                  if (exteriorButton) {
-                    exteriorButton.click();
-                  }
-                }
-              }}
+            <Link
+            href='https://app.shiningcarz.com'
+              className="luxury-button text-lg px-4 py-2  flex flex-row items-center justify-center"
             >
-              <Car className="w-5 h-5 mr-2" />
+              <Car className="w-5 h-5 mr-4" />
               Book Service Now
-            </Button>
+            </Link>
             <Button 
               variant="outline" 
               className="bg-transparent border-accent text-foreground hover:bg-accent/10 text-lg px-8 py-4"
