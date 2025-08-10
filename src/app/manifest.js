@@ -22,9 +22,9 @@ export default function manifest() {
           type: 'image/png',
         },
             {
-          src: '/android-chrome-512x512',
+          src: '/android-chrome-512x512.webp',
           sizes: '512x512',
-          type: 'image/png',
+          type: 'image/webp',
         },
       ],
     }

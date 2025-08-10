@@ -1,5 +1,4 @@
 import { Car, Wrench, Heart, Leaf } from 'lucide-react';
-// Using placeholder image since generation failed
 const aboutImage = '/images/tjsexr0betyk3ttnlife.webp';
 
 const AboutSection = () => {
