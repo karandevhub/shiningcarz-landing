@@ -19,7 +19,7 @@ const AboutSection = () => {
     {
       icon: Heart,
       title: 'Happy Customers',
-      value: '500+',
+      value: '12K+',
       description: 'Satisfied customers who trust our premium services'
     },
     {
@@ -93,7 +93,7 @@ const AboutSection = () => {
               </div>
               
               <div className="absolute bottom-6 right-6 luxury-card p-4">
-                <div className="text-2xl font-bold text-primary">24/7</div>
+                {/* <div className="text-2xl font-bold text-primary"></div> */}
                 <div className="text-sm text-foreground/70">Premium Support</div>
               </div>
             </div>
