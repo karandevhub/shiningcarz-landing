@@ -2,7 +2,6 @@
 import siteMetadata from '@/src/utils/siteMetaData';
 import { Mail } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
 import {
   FaFacebookF,
   FaInstagram,
@@ -19,6 +18,7 @@ const Footer = () => {
     { name: 'Products', href: '#products' },
     { name: 'About Us', href: '#about' },
     { name: 'Contact', href: '#contact' },
+    { name: "Terms of Service", href: '/terms-of-service' }
   ];
 
   const handleWhatsAppClick = () => {
@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="bg-white/10 p-3 rounded-full">
                   <FaPhone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-foreground/90">+91 70043 03889</span>
+                <span className="text-foreground/90">+91 92110 74136</span>
               </div>
               <div className="flex items-center gap-4 group hover:translate-x-2 transition-transform duration-300">
                 <div className="bg-white/10 p-3 rounded-full">

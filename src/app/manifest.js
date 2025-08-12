@@ -1,8 +1,8 @@
 export default function manifest() {
     return {
-      name: 'Next.js App',
-      short_name: 'Next.js App',
-      description: 'Next.js App',
+      name: 'ShiningCarz',
+      short_name: 'ShiningCarz',
+      description: 'ShiningCarz',
       start_url: '/',
       display: 'standalone',
       icons: [

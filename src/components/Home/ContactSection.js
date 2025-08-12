@@ -23,7 +23,7 @@ const ContactSection = () => {
       title: 'Manufacturing Office',
       location: 'Noida',
       address: ' D-14, 1st Floor, Sector 10, Noida - 201301',
-      phone: '+91 7004303889',
+      phone: '+91 9211074136',
       email: 'info@shiningcarz.com'
     },
     {
