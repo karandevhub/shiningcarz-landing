@@ -79,80 +79,45 @@ export const products = {
             link: "https://www.indiamart.com/shiningcarzprivatelimited/search.html?ss=car+washing"
         }
     ],
-    interior: [
+interior: [
+    {
+        id: 12,
+        name: "Deep Interior Cleaning",
+        description: "Thorough cleaning of the entire interior, including seats, dashboard, carpets, and gear console for a spotless finish.",
+        price: "Rs. 1999",
+        rating: 4.9,
+        image: "/images/wb 2.webp",
+        link: "https://app.shiningcarz.com/"
+    },
         {
-            id: 9,
-            name: "Blogs Cleaning",
-            description: "A specialist sprays disinfectant on a car seat for deep interior cleaning and sanitization.",
-            price: "Rs. 79.99",
-            rating: 4.9,
-            image: "/images/Blogs Cleaning.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 10,
-            name: "Upholstery Cleaner ",
-            description: "Leather car seats being polished and conditioned with care using detailing tools.",
-            price: "Rs. 54.99",
-            rating: 4.7,
-            image: "/images/Car_Cleaning_with_Upholstery_Cleaner.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 11,
-            name: "Micro Fiber Cloth",
-            description: "Dusting and wiping the dashboard to restore a clean, glossy interior finish.",
-            price: "Rs. 34.99",
-            rating: 4.8,
-            image: "/images/wb 1.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 12,
-            name: "Deep Interior Cleaning",
-            description: "Thorough cleaning of the gear console using a spray and microfiber cloth.",
-            price: "Rs. 44.99",
-            rating: 4.9,
-            image: "/images/wb 2.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-    ],
-    exterior: [
-        {
-            id: 13,
-            name: "Tire Pressure Wash",
-            description: "Powerful pressure wash targeting the wheels and lower body for deep cleaning.",
-            price: "Rs. 249.99",
-            rating: 4.9,
-            image: "/images/exterior 1.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 14,
-            name: "Car Polishing",
-            description: "A professional polishes the car’s surface to restore its glossy shine.",
-            price: "Rs. 89.99",
-            rating: 4.8,
-            image: "/images/exterior 2.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 15,
-            name: "Hand Washing Car",
-            description: "Detailed hand wash with foam for a spotless and shiny car exterior.",
-            price: "Rs. 129.99",
-            rating: 4.7,
-            image: "/images/exterior 3.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-        {
-            id: 16,
-            name: "Car Foam Wash",
-            description: "A luxury car undergoing a high-foam exterior wash.",
-            price: "Rs. 79.99",
-            rating: 4.9,
-            image: "/images/exterior 4.webp",
-            link: "https://app.shiningcarz.in/"
-        },
-    ]
+        id: 16,
+        name: "Full Spa",
+        description: "Comprehensive car spa service including exterior wash, interior cleaning, polishing, and conditioning for a complete refresh.",
+        price: "Rs. 2999",
+        rating: 4.9,
+        image: "/images/exterior 4.webp",
+        link: "https://app.shiningcarz.com/"
+    },
+],
+exterior: [
+    {
+        id: 13,
+        name: "Exterior Wash",
+        description: "Professional exterior wash with high-pressure cleaning to remove dirt, dust, and grime from the car’s body and wheels.",
+        price: "Rs. 1499",
+        rating: 4.9,
+        image: "/images/exterior 1.webp",
+        link: "https://app.shiningcarz.com/"
+    },
+    {
+        id: 16,
+        name: "Full Spa",
+        description: "Comprehensive car spa service including exterior wash, interior cleaning, polishing, and conditioning for a complete refresh.",
+        price: "Rs. 2999",
+        rating: 4.9,
+        image: "/images/exterior 4.webp",
+        link: "https://app.shiningcarz.com/"
+    },
+]
+
 };
